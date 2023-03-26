@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="business" />
+        <module name="data" />
+        <module name="Maven_PJ2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="business" target="19" />
+      <module name="data" target="19" />
+      <module name="Maven_PJ2" target="19" />
+      <module name="multi_Module" target="19" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
