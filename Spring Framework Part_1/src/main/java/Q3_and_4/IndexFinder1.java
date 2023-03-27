@@ -5,9 +5,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class IndexFinder1 {
-@Autowired
-    private AlgoUsed algoUsed ;
 
+    private AlgoUsed algoUsed ;
+    @Autowired
     public IndexFinder1(AlgoUsed algoUsed){
         this.algoUsed = algoUsed ;
     }
