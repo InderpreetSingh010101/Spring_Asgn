@@ -1,4 +1,4 @@
-package Q4;
+package Q2;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
