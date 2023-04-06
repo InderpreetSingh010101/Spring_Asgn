@@ -5,11 +5,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class All_Impl {
-@Autowired
+
     private  InterF interF ;
 
 
     // Constructor Injection
+    @Autowired
     All_Impl(InterF interF){
         this.interF = interF ;
     }
