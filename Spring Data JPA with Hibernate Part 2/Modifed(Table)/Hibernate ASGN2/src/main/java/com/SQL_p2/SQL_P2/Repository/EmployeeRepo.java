@@ -37,12 +37,12 @@ public interface EmployeeRepo extends CrudRepository<Employee,Integer> {
 
 
     // Display the id, first name, age of all employees where last name ends with "singh"
-    @Query(value = "select emp_id , emp_firstName , emp_age  from employee where emp_lastname like '%al' " , nativeQuery = true)
+    @Query(value = "select emp_id , emp_firstName , emp_age  from employee where emp_lastname like '%singh' " , nativeQuery = true)
     List<Object[]> findByLastNameNQ();
 
     //    Delete all employees with age greater than 45(Should be passed as a parameter)
 
-    @Query(value = "delete from employee where emp_age > 45" , nativeQuery = true)
+    @Query(value = "delete from employee where emp_age > :agepassed" , nativeQuery = true)
     @Modifying
-    void deleteEmpOnAge();
+    void deleteEmpOnAge(@Param("agepassed") int agepassed);
 }

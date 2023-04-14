@@ -1,4 +1,4 @@
-package Q2;
+package Q2.Entity;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Size;

@@ -46,7 +46,7 @@ class SqlP2ApplicationTests {
 
 		subjectsHashSet.add(sub2) ;
 
-		author.setSubjects(subjectsHashSet);
+//		author.setSubjects(subjectsHashSet);
 
 		authorRepo.save(author) ;
 
@@ -67,21 +67,28 @@ class SqlP2ApplicationTests {
 
 		author.setAddress(address);
 
-		HashSet<Subjects> subjectsHashSet = new HashSet<>() ;
+//		HashSet<Subjects> subjectsHashSet = new HashSet<>() ;
+//
+//		Subjects sub1 = new Subjects() ;
+//		sub1.setSubject_name("MicroProcessor");
+//		sub1.setAuthor(author) ;
+//
+//		subjectsHashSet.add(sub1) ;
+//
+//		Subjects sub2 = new Subjects() ;
+//		sub2.setSubject_name("IT");
+//		sub2.setAuthor(author) ;
+//
+//		subjectsHashSet.add(sub2) ;
+//
+//		author.setSubjects(subjectsHashSet);
 
-		Subjects sub1 = new Subjects() ;
-		sub1.setSubject_name("MicroProcessor");
-		sub1.setAuthor(author) ;
+		HashSet<String> subjects = new HashSet<>();
+		subjects.add("maths");
+		subjects.add("ComSC");
+		subjects.add("Cpp");
 
-		subjectsHashSet.add(sub1) ;
-
-		Subjects sub2 = new Subjects() ;
-		sub2.setSubject_name("IT");
-		sub2.setAuthor(author) ;
-
-		subjectsHashSet.add(sub2) ;
-
-		author.setSubjects(subjectsHashSet);
+		author.setSub(subjects);
 
 
       Book book = new Book() ;

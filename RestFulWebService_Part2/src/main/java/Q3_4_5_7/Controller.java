@@ -55,14 +55,17 @@ public class Controller {
 
 
     }
+
+    @Operation(summary = "Post new Employee")
     @PostMapping(path = "/employee")
     public Employee postEmployee(@Valid @RequestBody Employee employee){
         return service.postEmployee(employee) ;
 
     }
 
+    @Operation(summary = "Update Employee By Id")
     @PutMapping (path = "/employee/{id}")
-    public Employee putEmployee(@PathVariable int id ,@RequestBody Employee employee){
+    public Employee putEmployee(@Parameter(description = "Id of the Employee")@PathVariable int id ,@RequestBody Employee employee){
         service.DeleteById(id);
         service.postEmployee(employee) ;
         return service.postEmployee(employee) ;

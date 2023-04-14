@@ -1,7 +1,5 @@
 package Q2.ErrorHandling;
 
-import Q2.EmpNotFoundException;
-import Q2.Employee;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;

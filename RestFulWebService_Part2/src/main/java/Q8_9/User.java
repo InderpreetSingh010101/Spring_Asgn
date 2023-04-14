@@ -3,8 +3,9 @@ package Q8_9;
 // but on successfully saving returns only non-critical data
 
 import com.fasterxml.jackson.annotation.JsonFilter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
-@JsonFilter("SomeBeanFilter")
+//@JsonFilter("SomeBeanFilter")
 public class User {
     private int id ;
     private String email ;
@@ -41,7 +42,7 @@ public class User {
     }
 
 
-//    @JsonIgnore
+    @JsonIgnore
     public String getPassword() {
         return password;
     }

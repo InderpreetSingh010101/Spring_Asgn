@@ -17,7 +17,7 @@ import java.util.List;
 // but on successfully saving returns only non-critical data
 @RestController
 
-public class controller {
+public class Controller {
 @Autowired
     public ServiceIMPL service ;
 

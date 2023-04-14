@@ -73,9 +73,9 @@ class SqlP2ApplicationTests {
 	void findLnameUsingNQ(){
 		 List<Object[]> result= employeeRepo.findByLastNameNQ();
 		 for(Object[] obj : result){
-			 System.out.println(obj[0]);
-			 System.out.println(obj[1]);
-			 System.out.println(obj[2]);
+			 System.out.println("id"+"" +obj[0]);
+			 System.out.println("fname"+"" +obj[1]);
+			 System.out.println("age"+"" +obj[2]);
 			 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 		 }
 	}
@@ -84,7 +84,7 @@ class SqlP2ApplicationTests {
 	@Transactional
 	@Rollback(false)
    void deleteEmpByAge(){
-		employeeRepo.deleteEmpOnAge();
+		employeeRepo.deleteEmpOnAge(45);
 	}
 
 

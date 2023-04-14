@@ -53,17 +53,17 @@ class SqlP2ApplicationTests {
 
 
 	}
-//	@Test
-//	void ReadAllData() {
-//
-//		List<Employee> emp = employeeRepo.findAll() ;
-//
-//
-//		System.out.println(emp);
-//
-//
-//	}
-//
+	@Test
+	void ReadAllData() {
+
+		List<Employee> emp = employeeRepo.findAll() ;
+
+
+		System.out.println(emp);
+
+
+	}
+
 	@Test
 	void CountData() {
 

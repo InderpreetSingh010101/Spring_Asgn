@@ -1,4 +1,4 @@
-package Q2;
+package Q2.ErrorHandling;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

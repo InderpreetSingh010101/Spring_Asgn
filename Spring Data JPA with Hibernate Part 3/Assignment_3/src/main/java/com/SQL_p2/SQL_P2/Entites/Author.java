@@ -15,8 +15,17 @@ public class Author {
     private Address address ;
 
 
-    @OneToMany(mappedBy = "author" , cascade = CascadeType.ALL , fetch = FetchType.LAZY)
-    private Set<Subjects> subjects ;
+    //@OneToMany(mappedBy = "author" , cascade = CascadeType.ALL )
+@ElementCollection()
+    private Set<String> sub ;
+
+    public Set<String> getSub() {
+        return sub;
+    }
+
+    public void setSub(Set<String> sub) {
+        this.sub = sub;
+    }
 
     public void setBook(Book book) {
         this.book = book;
@@ -31,13 +40,13 @@ public class Author {
     private Book book;
 
 
-    public void setSubjects(Set<Subjects> subjects) {
-        this.subjects = subjects;
-    }
-
-    public Set<Subjects> getSubjects() {
-        return subjects;
-    }
+//    public void setSubjects(Set<Subjects> subjects) {
+//        this.subjects = subjects;
+//    }
+//
+//    public Set<Subjects> getSubjects() {
+//        return subjects;
+//    }
 
 
     public void setAddress(Address address) {
